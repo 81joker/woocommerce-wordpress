@@ -38,6 +38,7 @@ function fancy_lab_config(){
 			)
 		);
 
+		// This theme is WooCommerce compatible, so we're adding support to WooCommerce
 		add_theme_support( 'woocommerce', array(
 			'thumbnail_image_width' => 255,
 			'single_image_width'	=> 255,
@@ -58,19 +59,6 @@ function fancy_lab_config(){
 			$content_width = 600;
 		}				
 }
-
 add_action( 'after_setup_theme', 'fancy_lab_config', 0 );
 
-add_action( 'woocommerce_before_main_content', 'fancy_lab_before_main_content',5 );
-
-function fancy_lab_before_main_content(){
-	echo '<div class="container shop-content"><div class="row">';
-}
-add_action( 'woocommerce_after_main_content', 'fancy_lab_after_main_content');
-
-function fancy_lab_after_main_content(){
-	echo '</div></div>';
-}
-
-remove_action('woocommerce_sidebar' ,'woocommerce_get_sidebar');
-add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar',6 );
+require get_template_directory() . '/inc/wc-modifications.php';
