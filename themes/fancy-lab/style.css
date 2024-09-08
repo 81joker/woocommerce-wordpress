@@ -12,6 +12,47 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 */
 
 
+/* rajdhani-regular - latin */
+@font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/rajdhani/rajdhani-v15-latin-regular.woff'); 
+}
+/* rajdhani-500 - latin */
+@font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/rajdhani/rajdhani-v15-latin-500.woff'); 
+}
+/* rajdhani-600 - latin */
+@font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/rajdhani/rajdhani-v15-latin-600.woff'); 
+}
+/* rajdhani-700 - latin */
+@font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/rajdhani/rajdhani-v15-latin-700.woff'); 
+}
+/* seaweed-script-regular - latin */
+@font-face {
+    font-family: 'Seaweed Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/seaweed-script/seaweed-script-v13-latin-regular.woff'); 
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+}
+
 /* Header - Main Menu */
 .main-menu{
     padding: 0;
@@ -33,6 +74,36 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 .main-menu ul li:last-child{ 
     margin: 0; 
 }
+
+.main-menu .dropdown:hover>.dropdown-menu, 
+.main-menu .dropup:hover>.dropdown-menu  {
+  display: block;
+}
+
+.main-menu .navbar-toggler-icon {
+    background-image: url('img/hamburger-menu.svg');
+}
+
+
+/* Search Form */
+.search-form button{
+    background-image: url('img/search.svg');
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.search-form input[type="search"]{
+    background-color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 110%;
+    padding: 0.3rem 1rem;
+    margin-right: 0.3rem;
+}
+
 
 
 /* Footer - Footer Menu */
