@@ -1,4 +1,5 @@
 <?php
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 
 /**
  * Fancy Lab functions and definitions
