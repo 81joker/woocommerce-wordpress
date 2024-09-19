@@ -13,6 +13,7 @@ get_header();
 			<main>
 				<div class="container">
 					<div class="row">
+						<div class="col-lg-9 col-md-8 col-12">
 						<?php 
 
 							the_archive_title( '<h1 class="article-title">', '</h1>' );
@@ -35,6 +36,8 @@ get_header();
 						?>
 							<p>Nothing to display.</p>
 						<?php endif; ?>
+						</div>
+						<?php get_sidebar(); ?>
 					</div>
 				</div>
 			</main>
