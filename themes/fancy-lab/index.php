@@ -52,6 +52,19 @@ get_header();
 										</article>
 									<?php
 								endwhile;
+						// the_posts_pagination(
+						// 	array(
+						// 		'prev_text'          => __( 'Previous page A', 'fancy-lab' ),
+						// 		'next_text'          => __( 'Next page B', 'fancy-lab' ),
+						// 		/* translators: Hidden accessibility text. */
+						// 		'before_page_number' => '<span class="meta-nav screen-reader-text bg bg-info">' . __( 'Page', 'fancy-lab' ) . ' </span>',
+						// 	)
+						// );
+						the_posts_pagination( array(
+							'prev_text'		=> 'Previous',
+							'next_text'		=> 'Next',
+						));
+						
 							else:
 						?>
 							<p>Nothing to display.</p>
