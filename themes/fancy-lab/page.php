@@ -26,6 +26,11 @@ get_header();
 								while( have_posts() ): the_post();
 									?>
 										<article class="col">
+													<?php 
+														if( has_post_thumbnail() ):
+															the_post_thumbnail(  array( 'class' => 'img-fluid' ) );
+														endif;
+													?>
 											<h1><?php the_title(); ?></h1>
 											<div><?php the_content(); ?></div>
 										</article>
