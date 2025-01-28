@@ -35,17 +35,3 @@ This project showcases a robust e-commerce platform built using WordPress and en
    ```sh
    git clone https://github.com/81joker/woocommerce-wordpress.git
 
-+++++
-Installation and Setup
-Clone the Repository:
-
-sh
-git clone https://github.com/81joker/woocommerce-wordpress.git
-Navigate to the Project Directory:
-
-sh
-cd woocommerce-wordpress
-Install Dependencies:
-
-sh
-npm install
